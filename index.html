@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Piano | Simulator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  
+</head>
+<style>
+.th {
+  position: absolute;
+transition: transform .2s; 
+  top: 40px;
+font-family:Segoe Print;
+  left: 20px;
+
+ color:yellow;
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(342deg);
+  text-shadow: 1px 3px #8CF7F2;
+  font-size: 25px;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+.th:hover{
+
+transform: scale(1.1);
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(350deg);
+font-size: 40px
+}
+
+.blink {
+      animation: blinker 0.6s linear infinite;
+      color: #00e0ac;
+      font-size: 26px;
+      font-weight: bold;
+      font-family:cursive;
+      }
+      @keyframes blinker {  
+      50% { opacity: 0; }
+      }
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F4F967, 0 0 20px #F4F967 , 0 0 30px #F4F967, 0 0 40px #F4F967, 0 0 50px red, 0 0 60px white, 0 0 70px 0C0A0A;
+  }
+  
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px #ff4da6, 0 0 40px #EEE972, 0 0 50px red, 0 0 60px #EEE972, 0 0 70px red, 0 0 80px #F4F967;
+  }}
+</style>
+<body>
+
+
+
+  <div class="piano">
+    <button class="key white-key C4">Q</button>
+    <button class="key black-key Db4">2</button>
+    <button class="key white-key D4">W</button>
+    <button class="key black-key Eb4">3</button>
+    <button class="key white-key E4">E</button>
+    <button class="key white-key F4">R</button>
+    <button class="key black-key Gb4">5</button>
+    <button class="key white-key G4">T</button>
+    <button class="key black-key Ab4">6</button>
+    <button class="key white-key A4">Y</button>
+    <button class="key black-key Bb4">7</button>
+    <button class="key white-key B4">U</button>
+    <button class="key white-key C5">I</button>
+    <button class="key black-key Db5">9</button>
+    <button class="key white-key D5">O</button>
+    <button class="key black-key Eb5">0</button>
+    <button class="key white-key E5">P</button>
+  </div>
+
+  <script src="piano.js"></script>
+<b>
+
+
+<div class="th">
+<p class="blink">Developed by <br> <a href="https://github.com/hemanth-07-11" target=_blank><b><font color="#00e0ac"> HEMANTH N </font></b></a></p>
+</div>
+</b>
+</body>
+</html>

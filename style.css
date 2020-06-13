@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("wallpaper.png");
+  background-size: cover;
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  opacity: 0.55;
+}
+
+.key{
+  height: 300px;
+  width: 100px;
+  margin: 10px 3px;
+  border: 5px solid #45454d;
+  text-shadow: 1px 0 #e1ff00;
+  font-size: 40px;
+  color: red;
+  font-family: 'Indie Flower', cursive;
+  outline: none;
+text-indent:-14%;
+}
+.white-key {
+  width: 125px;
+  height: 350px;
+    background-image: linear-gradient(white,#f0f0f0);
+  border: 5px solid black;
+  border-radius: 10px 10px 5px 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: -4px;
+}
+
+.white-key.active {
+  background-image: linear-gradient(#8c8c8c,#c9c9c9);
+}
+
+.black-key {
+  position: absolute;
+  width: 74px;
+  height: 199px;
+  cursor: pointer;
+  background-image: linear-gradient(#000000,#636363);
+  border: 5px solid black;
+  border-radius: 0 0 2px 2px;
+  outline: none;
+  
+}
+
+.black-key.active {
+  background-image: linear-gradient(#1f1f1f, #b8b8b8);
+}
+
+.Db4 {
+  left: 82px;
+}
+
+.Eb4 {
+  left: 202px;
+}
+
+.Gb4 {
+  left: 445px;
+}
+
+.Ab4 {
+  left: 565px;
+}
+
+.Bb4 {
+  left: 687px;
+}
+
+.Db5 {
+  left: 930px;
+}
+
+.Eb5 {
+  left: 1050px;
+}
+
+
